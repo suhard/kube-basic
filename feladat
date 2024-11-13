@@ -1,0 +1,13 @@
+1. A feladat célja az alapvető Kubernetes objektumok kezelésének gyakorlása: Pod, Deployment és Service létrehozása, elérése
+2. Lépjetek be a Kubernetes master node-ra. A belépéshez kövessétek a Kontener-2024-K8s_November.pdf-ben megadott lépéseket.
+3. Dolgozattok a "work" folderben, azon belül hozzatok létre egy foldert a ti Neptunk kódotokkal
+4. Használhatjátok a https://github.com/suhard/kube-objects GitHub repóban levő mintafájlokat (gyakorlat során is ezt használtam)
+5. A feladathoz tartozó „elmélet” fóliák elérhetőek a Teams-en: Kontener-2024-09-K8s-DeploySvc.pdf
+6. Saját Kubernetes névteret hozzatok létre magatoknak (pl. a NEPTUN kódotok legyen a névtér neve), azt használjátok a feladathoz.
+7. A feladat, hogy lépésenként kövessétek egy "Kubernetes service" indítását, azt pedig ellenőrizzétek.
+8. A lépések: namespace, pod, majd pod helyett deployment. Erre egy service. 
+9. Beküldeni (Teams Assignment): a felhasznált YAML fájl-ok, valamint a szöveges 'beszámoló' (pdf)
+10. Keressétek meg, hogy hol indult a pod, lépjetek be arra a worker node-ra (ssh root@<worker>) és kérdezzétek le a runtime segédprogramjával (crictl) a podotokban futó konténereket.
+11. A beszámoló legyen 1-2 oldalas tartalma: a lépések elmagyarázása, képernyőmentés, hogy működik a lekérdezés a lépések során
+
+ 
