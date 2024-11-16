@@ -1,0 +1,43 @@
+# A kubectl parancsokkal lekérdezhető fontosabb objektumok-típusok,
+ú.n. "api resources" (zárójelben a rövidített változat, a "shortcode")
+----------------------------------------------------------------------
+pods (po)
+replicasets (rs)
+deployments (deploy)
+services (svc)
+persistentvolumes (pv)
+persistentvolumeclaim (pvc)
+nodes (no)
+
+# A teljes klaszterre vonatkozó parancsok
+-----------------------------------------
+# listázni az összes elérhető objektum ("api resources")
+kubectl api-resources
+
+# listázni a klaszter aktív svc-t és végpontokat (endpoint)
+kubectl cluster-info
+
+# a Kubernetes verzió listázása
+kubectl version
+
+# Az objektumokról információt lekérdező parancsok
+--------------------------------------------------
+# Adott névtérbe tartozó összes objektum lekérdezése
+kubectl get <objektum-típus> [-n névtér]
+
+# Egy konkrét objektum részletes adatainak lekérdezése
+kubectl describe <objektum-típus> <objektum-név> [-n névtér]
+
+# Egy podon belüli konténer logjainak lekérdezése
+kubectl logs -c <konténer-név> <pod-név> [-n namespace] -owide
+
+# Egy konkrét objektum törlése
+kubectl delete <objektum-típus> <objektum-név> [-n névtér]
+
+# Deklaratív YAML fájl alapú műveletek
+--------------------------------------
+# Egy YAML deklaratív leírás ("manifest file") végrehajtása 
+kubectl appy -f manifest.yaml
+
+# Egy YAML deklaratív leírás ("manifest file") alapjá objektumok törlése
+kubectl delete -f manifest.yaml
