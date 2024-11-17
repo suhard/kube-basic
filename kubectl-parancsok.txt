@@ -29,7 +29,10 @@ kubectl get <objektum-típus> [-n névtér]
 kubectl describe <objektum-típus> <objektum-név> [-n névtér]
 
 # Egy podon belüli konténer logjainak lekérdezése
-kubectl logs -c <konténer-név> <pod-név> [-n namespace] -owide
+kubectl logs -c <konténer-név> <pod-név> [-n namespace]
+
+# Egy pod legutolsó x log kiírását listázni
+kubect logs --tail=x <pod-név>
 
 # Egy konkrét objektum törlése
 kubectl delete <objektum-típus> <objektum-név> [-n névtér]
