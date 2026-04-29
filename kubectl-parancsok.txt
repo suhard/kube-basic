@@ -40,7 +40,7 @@ kubectl delete <objektum-típus> <objektum-név> [-n névtér]
 # Deklaratív YAML fájl alapú műveletek
 --------------------------------------
 # Egy YAML deklaratív leírás ("manifest file") végrehajtása 
-kubectl appy -f manifest.yaml
+kubectl apply -f manifest.yaml
 
 # Egy YAML deklaratív leírás ("manifest file") alapjá objektumok törlése
 kubectl delete -f manifest.yaml
