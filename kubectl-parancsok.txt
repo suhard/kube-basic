@@ -32,7 +32,7 @@ kubectl describe <objektum-típus> <objektum-név> [-n névtér]
 kubectl logs -c <konténer-név> <pod-név> [-n namespace]
 
 # Egy pod legutolsó x log kiírását listázni
-kubect logs --tail=x <pod-név>
+kubectl logs --tail=x <pod-név>
 
 # Egy konkrét objektum törlése
 kubectl delete <objektum-típus> <objektum-név> [-n névtér]
